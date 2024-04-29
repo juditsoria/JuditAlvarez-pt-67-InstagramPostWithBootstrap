@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <link href="styles.css" rel="stylesheet" type="text/css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Instagram con bootstrap. JUDIT ALVAREZ</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+
+
+<body>
+
+  <nav class="navbar navbar-expand-lg  bg-body-tertiary ">
+    
+    <div class="container-fluid d-flex justify-content-between">
+
+      <a class="navbar-brand href=#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+          <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+        </svg>
+          Instagram
+      </a>
+      <div class="d-flex" id="navbarSupportedContent ">
+        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Create a new post
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade"   id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                 Caption: <br></br>
+                 <textarea></textarea> <br></br>
+                 <button type="button" class="btn btn-light"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera" viewBox="0 0 16 16">
+                  <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4z"/>
+                  <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5m0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7M3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
+                </svg></button>
+                 <button type="button" class="btn btn-light"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                  <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                  <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                </svg></button>
+             
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success">publish</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <div class="container-fluid d-flex justify-content-between">
+          <li class="nav-item dropdown bg-secondary "> 
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+                <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0"/>
+                <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z"/>
+              </svg>
+            </a>
+            <ul class="dropdown-menu dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Accesibility</a></li>
+              <li><a class="dropdown-item" href="#">Privacity and data</a></li>
+              <li><a class="dropdown-item" href="#">Log out</a></li>
+            </ul>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+
+
+
+
+
+
+
+
+    <div class="iconos d-flex aling-items-center">
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item ico" role="presentation">
+      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+        <img src="https://cdn-icons-png.flaticon.com/256/214/214202.png" width="30px" height="50px"  alt=""></button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
+        <img src="https://cdn-icons-png.flaticon.com/512/1256/1256324.png" width="30px" height="50px"  alt="">
+      </button>
+    </li>
+  </div>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+      <div class="container h-100 w-100">
+        <div class="row">
+          <div class="col-4  "><img class="img-fluid h-100 object-fit-cover "
+              src="https://th.bing.com/th/id/R.954f92f2a1dfbbb042017f3a71a13cd8?rik=gFshRTHzhhmG1w&riu=http%3a%2f%2facidcow.com%2fpics%2f20111028%2fanimals_30.jpg&ehk=Gwvvt3ZXaNXt4D75FT%2fue1QPOP0HX0OA2u9NVYMbkxI%3d&risl=&pid=ImgRaw&r=0"/>
+
+          </div>
+          <div class="col-4"> <img class="img-fluid h-100 object-fit-cover" src="https://th.bing.com/th/id/OIP.cQmprQKmAqft0Qt7HlKAiAHaE7?rs=1&pid=ImgDetMain"/>
+          </div>
+          <div class="col-4"> <img class="img-fluid h-100 object-fit-cover"
+              src="https://th.bing.com/th/id/R.d6d6a862c354e5648c9cb2822c562668?rik=xJ0WaGVA2o8QOA&riu=http%3a%2f%2fwallup.net%2fwp-content%2fuploads%2f2016%2f01%2f26344-animals-teeth-Jaguar-jaguars.jpg&ehk=BLPkTbLJXy3E0t8UeiS9marsaws5tH61Ag173TB70Pw%3d&risl=&pid=ImgRaw&r=0"/>
+          </div>
+        <!-- </div> -->
+        <!-- <div class="row"> -->
+          <div class="col-4"><img class="img-fluid h-100 object-fit-cover"
+              src="https://th.bing.com/th/id/R.6ea8a6c436ad75c1e3715092d174fdd7?rik=paXpfAbZMDZQmQ&riu=http%3a%2f%2fwallup.net%2fwp-content%2fuploads%2f2016%2f10%2f12%2f378695-leopard-animals.jpg&ehk=zfH%2bLMddxe%2bVu0C15sJHg0ANYCYGplXYx2RP5Kup3xM%3d&risl=&pid=ImgRaw&r=0"/>
+          </div>
+          <div class="col-4 "> <img class="img-fluid h-100 object-fit-cover" src="https://wallup.net/wp-content/uploads/2016/01/185765-fox-animals-wildlife.jpg"/>
+          </div>
+          <div class="col-4 "> <img class="img-fluid h-100 object-fit-cover" src="https://th.bing.com/th/id/OIP.oXAhXwpdliBw4LJMFkoghgHaEK?rs=1&pid=ImgDetMain"/>
+          </div>
+        <!-- </div>
+        <div class="row"> -->
+          <div class="col-4"><img class="img-fluid h-100 object-fit-cover"
+              src="https://th.bing.com/th/id/R.7065a642e857dcd541d92176941fb6f3?rik=YXcCd3k7iY9fAw&riu=http%3a%2f%2fwww.hdwallpaperspulse.com%2fwp-content%2fuploads%2f2013%2f02%2fBeautiful-Animal-010.jpg&ehk=sjHAXFQhAKSbvH8VzCY9MgUvgshzTnX%2fMtwoCU%2bvY30%3d&risl=&pid=ImgRaw&r=0"/>
+             
+          </div>
+          <div class="col-4"><img class="img-fluid h-100 object-fit-cover" src="https://th.bing.com/th/id/OIP.HLM2n7TIfVZXp20gUw3MQQHaE5?rs=1&pid=ImgDetMain"/>
+            
+          </div>
+          <div class="col-4"> <img class="img-fluid h-100 object-fit-cover"
+              src="https://4.bp.blogspot.com/_EZ16vWYvHHg/S9RrMOTJoDI/AAAAAAAALTE/v5HWBrZHEuI/s1600/www.BancodeImagenesGratuitas.com+-Criaturas-11.jpg"/>
+             
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+<div class="container cartas d-flex align-items-center flex-column ">
+  <div class="card border-subtle card" style="width: 38rem;">
+    <img src="https://th.bing.com/th/id/R.954f92f2a1dfbbb042017f3a71a13cd8?rik=gFshRTHzhhmG1w&riu=http%3a%2f%2facidcow.com%2fpics%2f20111028%2fanimals_30.jpg&ehk=Gwvvt3ZXaNXt4D75FT%2fue1QPOP0HX0OA2u9NVYMbkxI%3d&risl=&pid=ImgRaw&r=0" class="card-img-top" alt="...">
+    <div class="card-body ">
+      <h5 class="card-title d-flex justify-content-between">1923 likes <p>12/10</p></h5>
+      <p class="card-text float:left">Increible salto del felino.</p>
+    </div>
+  </div>
+  <div class="card border-subtle card" style="width: 38rem;">
+    <img src="https://th.bing.com/th/id/OIP.cQmprQKmAqft0Qt7HlKAiAHaE7?rs=1&pid=ImgDetMain" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title d-flex justify-content-between">294 likes <p>12/12</p> </h5>
+      <p class="card-text">Precioso guepardo enseñando los dientes.</p>
+    </div>
+  </div>
+  <div class="card border-subtle card" style="width: 38rem;">
+    <img src="https://th.bing.com/th/id/R.d6d6a862c354e5648c9cb2822c562668?rik=xJ0WaGVA2o8QOA&riu=http%3a%2f%2fwallup.net%2fwp-content%2fuploads%2f2016%2f01%2f26344-animals-teeth-Jaguar-jaguars.jpg&ehk=BLPkTbLJXy3E0t8UeiS9marsaws5tH61Ag173TB70Pw%3d&risl=&pid=ImgRaw&r=0" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title d-flex justify-content-between">345 likes <p>14/09</p></h5>
+      <p class="card-text">Preparandose para atacar.</p>
+    </div>
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+
+
+
+  </body>
+</html>
